@@ -14,3 +14,5 @@ source="source ~/rcfiles/vimrc"
 if ! grep "${source}" ${rcfile} > /dev/null; then
 	echo "\n${sig_vimrc}\n${source}\n" >> ${rcfile}
 fi
+
+vim +PlugInstall +qall
