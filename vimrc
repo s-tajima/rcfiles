@@ -15,6 +15,14 @@ set smartcase
 set title
 set paste
 
+nnoremap <C-n> :<C-u>set number!<CR>
+nnoremap <C-p> :<C-u>set paste!<CR>
+
+nnoremap <C-l>d :<C-u>tab LspDefinition<CR>
+nnoremap <C-l>p :<C-u>tab LspPeekDefinition<CR>
+nnoremap <C-l>r :<C-u>tab LspReferences<CR>
+nnoremap <C-l>n :<C-u>tab LspRename<CR>
+
 "display statusline
 function! GetStatusEx()
 	let str = ''

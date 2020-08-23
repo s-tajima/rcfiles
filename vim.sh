@@ -16,3 +16,5 @@ if ! grep "${source}" ${rcfile} > /dev/null; then
 fi
 
 vim +PlugInstall +qall
+
+
