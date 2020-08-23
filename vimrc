@@ -18,6 +18,7 @@ set paste
 nnoremap <C-n> :<C-u>set number!<CR>
 nnoremap <C-p> :<C-u>set paste!<CR>
 
+nnoremap <C-l>c :<C-u>tab LspCodeAction<CR>
 nnoremap <C-l>d :<C-u>tab LspDefinition<CR>
 nnoremap <C-l>p :<C-u>tab LspPeekDefinition<CR>
 nnoremap <C-l>r :<C-u>tab LspReferences<CR>
@@ -52,3 +53,5 @@ call plug#begin('~/.vim/plugged')
 call plug#end()
 
 autocmd BufWritePre <buffer> LspDocumentFormatSync
+
+let g:lsp_diagnostics_echo_cursor = 1
