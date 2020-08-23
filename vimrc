@@ -42,3 +42,5 @@ call plug#begin('~/.vim/plugged')
   Plug 'prabirshrestha/asyncomplete.vim'
   Plug 'prabirshrestha/asyncomplete-lsp.vim'
 call plug#end()
+
+autocmd BufWritePre <buffer> LspDocumentFormatSync
