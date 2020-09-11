@@ -1,7 +1,8 @@
 syntax on
 set nocompatible
-set tabstop=4
-set shiftwidth=4
+set expandtab
+set tabstop=2
+set shiftwidth=2
 set number
 set hlsearch
 set backspace=indent,eol,start
@@ -50,6 +51,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'mattn/vim-lsp-settings'
   Plug 'prabirshrestha/asyncomplete.vim'
   Plug 'prabirshrestha/asyncomplete-lsp.vim'
+
+  Plug 'hashivim/vim-terraform'
 call plug#end()
 
 autocmd BufWritePre <buffer> LspDocumentFormatSync
