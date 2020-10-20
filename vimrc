@@ -53,6 +53,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'prabirshrestha/asyncomplete-lsp.vim'
 
   Plug 'hashivim/vim-terraform'
+
+  Plug 'udalov/kotlin-vim', { 'for': 'kotlin' }
 call plug#end()
 
 autocmd BufWritePre <buffer> LspDocumentFormatSync
