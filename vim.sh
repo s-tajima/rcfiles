@@ -12,7 +12,7 @@ EOF`
 rcfile="$HOME/.vimrc"
 source="source ~/rcfiles/vimrc"
 if ! grep "${source}" ${rcfile} > /dev/null; then
-	echo "\n${sig_vimrc}\n${source}\n" >> ${rcfile}
+	echo -e "\n${sig_vimrc}\n${source}\n" >> ${rcfile}
 fi
 
 vim -E -s +PlugInstall +visual +qall
