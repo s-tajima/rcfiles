@@ -15,4 +15,4 @@ if ! grep "${source}" ${rcfile} > /dev/null; then
 	echo -e "\n${sig_vimrc}\n${source}\n" >> ${rcfile}
 fi
 
-vim -E -s +PlugInstall +visual +qall
+vim +PlugInstall +qall > /dev/null
